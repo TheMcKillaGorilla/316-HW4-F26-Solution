@@ -1,0 +1,38 @@
+{
+    "name": "cse316-hw4-solution",
+    "version": "1.0.0",
+    "description": "Wolfie Lists - CSE 316 Homework 4 (instructor solution). React (Vite) and an Express API in TypeScript, on PostgreSQL, with user accounts.",
+    "author": "CSE 316 - Stony Brook University",
+    "license": "UNLICENSED",
+    "private": true,
+    "type": "module",
+    "engines": {
+        "node": ">=20.19.0"
+    },
+    "workspaces": [
+        "shared",
+        "server",
+        "client"
+    ],
+    "scripts": {
+        "dev": "concurrently --names server,client --prefix-colors blue,magenta \"npm run dev -w server\" \"npm run dev -w client\"",
+        "seed": "npm run seed -w server",
+        "build": "npm run build -w client",
+        "start": "concurrently --names server,client --prefix-colors blue,magenta \"npm start -w server\" \"npm start -w client\"",
+        "typecheck": "npm run typecheck -w server && npm run typecheck -w client",
+        "test": "npm test -w server && npm test -w client",
+        "test:server": "npm test -w server",
+        "test:client": "npm test -w client",
+        "test:e2e": "playwright test --config tests/e2e/playwright.config.ts",
+        "test:e2e:headed": "playwright test --headed --config tests/e2e/playwright.config.ts",
+        "test:e2e:report": "playwright show-report tests/e2e/output/playwright-report",
+        "test:all": "npm run typecheck && npm test && npm run test:e2e",
+        "migrate": "npm run migrate -w server"
+    },
+    "devDependencies": {
+        "@playwright/test": "^1.63.0",
+        "@types/node": "^20.19.0",
+        "concurrently": "^9.2.1",
+        "typescript": "^6.0.3"
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "main": "src/server.ts",
+    "scripts": {
+        "start": "tsx src/server.ts",
+        "dev": "tsx watch src/server.ts",
+        "seed": "tsx scripts/seed.ts",
+        "typecheck": "tsc --noEmit",
+        "test": "vitest run --config tests/vitest.config.ts",
+        "test:watch": "vitest --config tests/vitest.config.ts",
+        "migrate": "tsx scripts/migrate.ts"
+    },
+    "dependencies": {
+        "@wolfie-lists/shared": "*",
+        "bcrypt": "^6.0.0",
+        "cookie-parser": "^1.4.7",
+        "dotenv": "^17.2.3",
+        "express": "^5.2.1",
+        "jsonwebtoken": "^9.0.3",
+        "multer": "^2.4.0",
+        "tsx": "^4.23.15",
+        "pg": "^8.23.1"
+    },
+    "devDependencies": {
+        "@types/bcrypt": "^6.0.0",
+        "@types/cookie-parser": "^1.4.10",
+        "@types/express": "^5.0.6",
+        "@types/jsonwebtoken": "^9.0.10",
+        "@types/multer": "^2.3.0",
+        "@types/supertest": "^7.2.1",
+        "supertest": "^7.3.0",
+        "vitest": "^4.1.11",
+        "@types/pg": "^8.15.0",
+        "embedded-postgres": "^18.4.0-beta.17"
+    }
+}

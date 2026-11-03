@@ -1,0 +1,22 @@
+{
+    // Vite compiles the TypeScript; tsc only checks it (npm run typecheck).
+    "compilerOptions": {
+        "target": "ES2023",
+        "lib": ["DOM", "DOM.Iterable", "ES2023"],
+        "module": "ESNext",
+        "moduleResolution": "bundler",
+        "jsx": "react-jsx",
+        "types": ["vite/client"],
+        "strict": true,
+        "noEmit": true,
+        "skipLibCheck": true,
+        "isolatedModules": true,
+        "verbatimModuleSyntax": true,
+        "resolveJsonModule": true,
+        // @/ means src/, matching the alias in vite.config.ts
+        "paths": {
+            "@/*": ["./src/*"]
+        }
+    },
+    "include": ["src", "tests", "vite.config.ts"]
+}

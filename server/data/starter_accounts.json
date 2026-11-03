@@ -1,0 +1,221 @@
+{
+    "description": "What npm run seed loads: each account and the example lists it owns. Ids are deliberately absent; PostgreSQL makes the list ids and the seed makes the item ids.",
+    "accounts": [
+        {
+            "email": "joe@shmo.com",
+            "password": "12345678",
+            "lists": [
+                {
+                    "name": "Events to Attend",
+                    "items": [
+                        {
+                            "description": "Information Technology Job and Internship Fair",
+                            "dateEntered": "2025-09-18",
+                            "priority": "Low",
+                            "targetDate": "2025-09-18",
+                            "completed": true
+                        },
+                        {
+                            "description": "SBUHacks 2026",
+                            "dateEntered": "2026-05-24",
+                            "priority": "Medium",
+                            "targetDate": "2026-10-23",
+                            "completed": false
+                        },
+                        {
+                            "description": "22nd Annual SBU Game Programming Competition",
+                            "dateEntered": "2026-06-01",
+                            "priority": "High",
+                            "targetDate": "2027-05-14",
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "name": "CSE 316 Homework 1",
+                    "items": [
+                        {
+                            "description": "Read the assignment description",
+                            "dateEntered": "2026-08-30",
+                            "priority": "Low",
+                            "targetDate": "2026-09-01",
+                            "completed": false
+                        },
+                        {
+                            "description": "Make a mental map of all source code",
+                            "dateEntered": "2026-08-30",
+                            "priority": "High",
+                            "targetDate": "2026-09-02",
+                            "completed": false
+                        },
+                        {
+                            "description": "Run initial app and playtest all scenarios",
+                            "dateEntered": "2026-08-30",
+                            "priority": "High",
+                            "targetDate": "2026-09-02",
+                            "completed": false
+                        },
+                        {
+                            "description": "Run and review Unit tests",
+                            "dateEntered": "2026-08-02",
+                            "priority": "Medium",
+                            "targetDate": "2026-09-03",
+                            "completed": false
+                        },
+                        {
+                            "description": "Run and review Integration tests",
+                            "dateEntered": "2026-08-03",
+                            "priority": "Medium",
+                            "targetDate": "2026-09-03",
+                            "completed": false
+                        },
+                        {
+                            "description": "Run and review End to End tests",
+                            "dateEntered": "2026-08-03",
+                            "priority": "High",
+                            "targetDate": "2026-09-03",
+                            "completed": false
+                        },
+                        {
+                            "description": "Review Architectural diagrams",
+                            "dateEntered": "2026-08-04",
+                            "priority": "Low",
+                            "targetDate": "2026-09-04",
+                            "completed": false
+                        },
+                        {
+                            "description": "Draw up action plan",
+                            "dateEntered": "2026-08-04",
+                            "priority": "Medium",
+                            "targetDate": "2026-09-05",
+                            "completed": false
+                        },
+                        {
+                            "description": "Implement all tasks",
+                            "dateEntered": "2026-08-05",
+                            "priority": "High",
+                            "targetDate": "2026-09-08",
+                            "completed": false
+                        },
+                        {
+                            "description": "Submit work on time",
+                            "dateEntered": "2026-08-14",
+                            "priority": "High",
+                            "targetDate": "2026-09-11",
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "email": "jane@doe.com",
+            "password": "abcdefgh",
+            "lists": [
+                {
+                    "name": "Stony Brook University Bucket List",
+                    "items": [
+                        {
+                            "description": "Get attacked by a Roth Pond goose",
+                            "dateEntered": "2026-06-15",
+                            "priority": "High",
+                            "targetDate": "2027-11-06",
+                            "completed": false
+                        },
+                        {
+                            "description": "Climb a McAllister Park sand dune",
+                            "dateEntered": "2026-07-28",
+                            "priority": "Medium",
+                            "targetDate": "2028-05-12",
+                            "completed": false
+                        },
+                        {
+                            "description": "Become a finalist in McKenna's Game Programming Competition",
+                            "dateEntered": "2026-04-23",
+                            "priority": "High",
+                            "targetDate": "2027-04-07",
+                            "completed": false
+                        },
+                        {
+                            "description": "Earn a title in Regio Vinco",
+                            "dateEntered": "2025-12-11",
+                            "priority": "High",
+                            "targetDate": "2027-03-20",
+                            "completed": false
+                        },
+                        {
+                            "description": "Enter and find your way out of the SBU Hospital labyrinth",
+                            "dateEntered": "2025-11-16",
+                            "priority": "Low",
+                            "targetDate": "2028-04-19",
+                            "completed": true
+                        },
+                        {
+                            "description": "Learn to talk to campus deer",
+                            "dateEntered": "2026-03-19",
+                            "priority": "Low",
+                            "targetDate": "2027-04-27",
+                            "completed": false
+                        },
+                        {
+                            "description": "Go on a date with Wolfie at the Avalon Park & Preserve",
+                            "dateEntered": "2026-07-14",
+                            "priority": "Low",
+                            "targetDate": "2026-08-15",
+                            "completed": false
+                        },
+                        {
+                            "description": "Demonstrate your sense of rhythm at a secret Rhythm Collective meeting",
+                            "dateEntered": "2025-10-26",
+                            "priority": "Low",
+                            "targetDate": "2027-08-22",
+                            "completed": false
+                        },
+                        {
+                            "description": "Make Paul Fodor laugh",
+                            "dateEntered": "2026-08-09",
+                            "priority": "Low",
+                            "targetDate": "2027-04-21",
+                            "completed": false
+                        },
+                        {
+                            "description": "Play a retro gaming console at a GDDC meeting",
+                            "dateEntered": "2026-07-14",
+                            "priority": "Low",
+                            "targetDate": "2026-09-02",
+                            "completed": false
+                        },
+                        {
+                            "description": "See a Gary Gygax Seawolf rendering first-hand",
+                            "dateEntered": "2026-06-25",
+                            "priority": "Low",
+                            "targetDate": "2027-06-14",
+                            "completed": true
+                        },
+                        {
+                            "description": "Leave one class, wait in line at a food truck, eat meal, before the very next class",
+                            "dateEntered": "2026-03-07",
+                            "priority": "Low",
+                            "targetDate": "2027-09-29",
+                            "completed": false
+                        },
+                        {
+                            "description": "Visit Stony Brook on Roblox",
+                            "dateEntered": "2025-12-10",
+                            "priority": "Low",
+                            "targetDate": "2028-02-10",
+                            "completed": false
+                        },
+                        {
+                            "description": "Find Employment",
+                            "dateEntered": "2026-01-28",
+                            "priority": "Low",
+                            "targetDate": "2028-04-23",
+                            "completed": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

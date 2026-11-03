@@ -1,0 +1,19 @@
+{
+    // The server is never compiled to JavaScript files. tsx runs the .ts files
+    // directly, and tsc only checks them (npm run typecheck), hence noEmit.
+    "compilerOptions": {
+        "target": "ES2023",
+        "lib": ["ES2023"],
+        "module": "ESNext",
+        "moduleResolution": "bundler",
+        "types": ["node"],
+        "strict": true,
+        "noEmit": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "isolatedModules": true,
+        "verbatimModuleSyntax": true,
+        "forceConsistentCasingInFileNames": true
+    },
+    "include": ["src", "scripts", "tests"]
+}
